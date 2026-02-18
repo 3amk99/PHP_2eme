@@ -1,0 +1,128 @@
+body
+{
+ box-sizing: border-box;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#container
+{
+    width: 360px ;   
+    height: 300px;   
+    margin: 200px  auto; 
+    background: rgb(255, 255, 255) ;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#collector #form_1
+{
+  display: grid;
+  grid-template-rows: repeat(3 , 50px ) ;
+  grid-template-columns: repeat(3 , 120px) ;
+}
+#collector #form_1 #greeting
+{
+    grid-column: 1/4 ;
+    grid-row: 1;
+  /*  background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_1 #name_placeholder
+{
+    grid-column: 1/2 ;
+    grid-row: 2;
+     /* background: rgb(5, 138, 21); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_1 #name_div
+{
+    grid-column: 2/4 ;
+    grid-row: 2;
+   /* background: rgb(0, 135, 150); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#collector #form_1 #choose_color
+{
+    grid-column: 1/2 ;
+    grid-row: 3;
+   /* background: rgb(39, 120, 250); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_1 #color_div
+{
+    grid-column: 2/3 ;
+    grid-row: 3;
+     /* background: rgb(255, 149, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_1 #save_button
+{
+    grid-column: 3/4 ;
+    grid-row: 3;
+    /* background: rgb(132, 63, 182); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+#collector #form_2
+{
+  display: grid;
+  grid-template-rows: repeat(2 , 50px ) ;
+  grid-template-columns: repeat(3 , 120px) ;
+}
+#collector #form_2 #language_label
+{
+    grid-column: 1 ;
+    grid-row: 1;
+   /* background: rgb(245, 105, 255); */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_2 #language_div
+{
+    grid-column: 2 ;
+    grid-row: 1;
+   /* background: rgb(215, 237, 16); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#collector #form_2 #save_button_lang
+{
+    grid-column: 3 ;
+    grid-row: 1;
+   /* background: rgb(16, 237, 119); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#collector #form_2 #reset
+{
+    grid-column: 3 ;
+    grid-row: 2;
+  /*  background: rgb(16, 101, 237); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
