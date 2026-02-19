@@ -4,7 +4,6 @@
     setcookie("name_cookie", "", time() - 3600, "/");                
     setcookie("color_cookie", "#000000", time() - 3600, "/");   
     setcookie("language_cookie", "en", time() - 3600, "/");  
-
     header('Location: php.php');
     exit ;
  }
@@ -118,6 +117,10 @@ $text =
                 <form method="POST" id="form_1">
                     <div id="greeting">
                         <?php echo $solo_language['greeting'] ." ". ($name ? $name : "Guest") . "  👋" ?>
+                        <?php 
+                              date_default_timezone_set("Africa/Casablanca");
+                              echo date("Y-m-d H:i:s");
+                        ?>
                     </div>
 
                     <div id="name_placeholder">
